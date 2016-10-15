@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Create event</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+
+  
+</head>
+<body>
+<form>
+  
+  <p>
+    Event name:<br>
+    <input type="text" name="ename"><br>
+  </p>
+  
+  <p>
+    Event type:<br>
+    <select name="etype">
+    </select>
+  </p>
+  
+  <p>
+    Date:<br>
+    <input type="text" id="datepicker">
+  </p>
+  
+  <p>
+    Select a time:<br>
+    <input type="time" name="usr_time">
+  </p>
+
+  <p>
+    Description:<br>
+    <textarea name="edesc" rows="10" cols="50" placeholder="What is this event about?">
+    </textarea>
+  </p>
+
+  <p>
+    <input type="submit" value="Submit">
+  </p>
+
+</form>
+</body>
+</html>
