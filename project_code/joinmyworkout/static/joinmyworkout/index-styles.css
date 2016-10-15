@@ -1,0 +1,16 @@
+.title {
+  font-family: Oxygen, sans-serif;
+  font-size: 8vw;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+.btn {
+  background: #333;
+  color: #fff;
+  margin: 10px;
+  padding: 1em 1.5em;
+  text-decoration: none;
+}
