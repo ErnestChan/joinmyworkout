@@ -19,4 +19,5 @@ from django.contrib import admin
 urlpatterns = [
 	url(r'^joinmyworkout/', include('joinmyworkout.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'', include('joinmyworkout.urls')),
 ]
