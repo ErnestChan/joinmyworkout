@@ -3,5 +3,10 @@ from django.shortcuts import render
 
 # Create your views here.
 
+
 def home(request):
         return render(request, 'joinmyworkout/index.html', {})
+
+
+def create_event(request):
+        return render(request, 'joinmyworkout/create_event.html', {})
