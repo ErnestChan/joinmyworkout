@@ -23,3 +23,7 @@ def create_event(request):
     else:
         form = CreateForm()
     return render(request, 'joinmyworkout/create_event.html', {'form': form})
+
+# This should have real functionality soon
+def search(request):
+    return render(request, 'joinmyworkout/search.html', {})

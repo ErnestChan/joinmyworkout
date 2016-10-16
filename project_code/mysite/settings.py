@@ -86,7 +86,7 @@ DATABASES = {
     }
 }
 
-TEMPLATE_CONTEXT_PROCESSORS = (
+"""TEMPLATE_CONTEXT_PROCESSORS = (
    'django.contrib.auth.context_processors.auth',
    'django.core.context_processors.debug',
    'django.core.context_processors.i18n',
@@ -96,7 +96,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
    'django.contrib.messages.context_processors.messages',
    'social.apps.django_app.context_processors.backends',
    'social.apps.django_app.context_processors.login_redirect',
-)
+)"""
 
 AUTHENTICATION_BACKENDS = (
    'social.backends.facebook.FacebookOAuth2',
