@@ -8,5 +8,6 @@ class CreateForm(forms.ModelForm):
 
     class Meta:
         model = Workout_Event
-        fields =('name', 'type', 'location', 'date', 'start', 'end',
-            'description', 'experience level', 'spots')
+        fields = ('event_name', 'event_type', 'location', 'date',
+                  'time_start', 'time_end', 'workout_description',
+                  'experience_level', 'number_of_spots',)

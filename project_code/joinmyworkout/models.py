@@ -68,12 +68,11 @@ class Workout_Event(models.Model):
     time_start = models.TimeField()
     time_end = models.TimeField()
     workout_description = models.TextField(max_length=1500)
-    experience_level = models.ForeignKey(
-        Event_Class_To_Experience_Level, on_delete=models.CASCADE)
+    experience_level = models.CharField(max_length=30)
     number_of_spots = models.PositiveSmallIntegerField()
 
     def __str__(self):
-        return self.user.firstname + ' ' + self.user.last_name + ", event: " + event_name + " type: " + event_type.event_type
+        return self.user.first_name + ' ' + self.user.last_name + ", event: " + self.event_name + " type: " + self.event_type.event_type
 
 
 @python_2_unicode_compatible  # only if you need to support Python 2
