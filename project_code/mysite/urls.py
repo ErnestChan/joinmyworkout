@@ -20,4 +20,6 @@ urlpatterns = [
 	url(r'^joinmyworkout/', include('joinmyworkout.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'', include('joinmyworkout.urls')),
+    url('', include('social.apps.django_app.urls', namespace='social')),
+    url('', include('django.contrib.auth.urls', namespace='auth')),
 ]

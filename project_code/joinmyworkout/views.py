@@ -1,12 +1,14 @@
 from django.shortcuts import render
-# from django.http import HttpResponse
+from django.template.context import RequestContext
 
 # Create your views here.
 
 
 def home(request):
-        return render(request, 'joinmyworkout/index.html', {})
+	context = RequestContext(request, 
+							{'user': request.user})
+	return render(request, 'joinmyworkout/index.html', {'user': request.user})
 
 
 def create_event(request):
-        return render(request, 'joinmyworkout/create_event.html', {})
+	return render(request, 'joinmyworkout/create_event.html', {})
